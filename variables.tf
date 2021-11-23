@@ -11,7 +11,7 @@ variable "prefix" {
 
 variable "location" {
   description = "The region where the virtual network is created."
-  default     = "centralus"
+  default     = "Switzerland North"
 }
 
 variable "address_space" {
@@ -72,4 +72,20 @@ variable "width" {
 variable "placeholder" {
   default     = "placekitten.com"
   description = "Image-as-a-service URL. Some other fun ones to try are fillmurray.com, placecage.com, placebeard.it, loremflickr.com, baconmockup.com, placeimg.com, placebear.com, placeskull.com, stevensegallery.com, placedog.net"
+}
+
+variable "ARM_CLIENT_SECRET" {
+  description = "Azure Credentials"
+}
+
+variable "ARM_SUBSCRIPTION_ID" {
+  description = "Azure Credentials"
+}
+
+variable "ARM_TENANT_ID" {
+  description = "Azure Credentials"
+}
+
+variable "ARM_CLIENT_ID" {
+  description = "Azure Credentials"
 }
